@@ -1,0 +1,22 @@
+.puzImg1 {
+  display: grid;
+  grid-column: 1 / span 10;
+  grid-row: 1 / span 10;
+}
+.puz1 {
+  display: grid;
+  grid-template-columns: repeat(10, 6.3%);
+  grid-template-rows: repeat(10, 10%);
+  justify-content: center;
+}
+
+.hammer {
+  grid-column: 3 / span 2;
+  grid-row: 1;
+  height: 30px;
+  width: 80px;
+  margin-left: 45px;
+  margin-top: 20px;
+  border-radius: 20px;
+  opacity: 0;
+}

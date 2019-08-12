@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import puzzle1 from "../PuzzleImages/puzzle1.jpg";
 import Countdown from "react-countdown-now";
+import "./puzzle1.css";
 
 class Puzzle1 extends Component {
   state = {
@@ -122,11 +123,11 @@ class Puzzle1 extends Component {
               {minutes}:{seconds}
             </span>
             <div className="puz1">
-              <img src={puzzle1} alt="" />
+              <img className="puzImg1" src={puzzle1} alt="" />
+              <button className="hammer" onClick={this.handleHammerClick}>
+                hammer
+              </button>
             </div>
-            <button className="hammer" onClick={this.handleHammerClick}>
-              hammer
-            </button>
             <button className="cuff" onClick={this.handleHandCuffClick}>
               HandCuff
             </button>
