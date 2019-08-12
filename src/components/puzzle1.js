@@ -127,34 +127,34 @@ class Puzzle1 extends Component {
               <button className="hammer" onClick={this.handleHammerClick}>
                 hammer
               </button>
+              <button className="cuff" onClick={this.handleHandCuffClick}>
+                HandCuff
+              </button>
+              <button className="shoe" onClick={this.handleShoeClick}>
+                Shoe
+              </button>
+              <button className="spoon" onClick={this.handleSpoonClick}>
+                Spoon
+              </button>
+              <button className="bullet" onClick={this.handleBulletClick}>
+                Bullet
+              </button>
+              <button className="scissors" onClick={this.handleScissorsClick}>
+                Scissors
+              </button>
+              <button className="kitten" onClick={this.handleKittenClick}>
+                Kitten
+              </button>
+              <button className="key" onClick={this.handleGoldKeyClick}>
+                GoldKey
+              </button>
+              <button className="hshoe" onClick={this.handleHorseShoeClick}>
+                HorseShoe
+              </button>
+              <button className="dove" onClick={this.handleDoveClick}>
+                Dove
+              </button>
             </div>
-            <button className="cuff" onClick={this.handleHandCuffClick}>
-              HandCuff
-            </button>
-            <button className="shoe" onClick={this.handleShoeClick}>
-              Shoe
-            </button>
-            <button className="spoon" onClick={this.handleSpoonClick}>
-              Spoon
-            </button>
-            <button className="bullet" onClick={this.handleBulletClick}>
-              Bullet
-            </button>
-            <button className="scissors" onClick={this.handleScissorsClick}>
-              Scissors
-            </button>
-            <button className="kitten" onClick={this.handleKittenClick}>
-              Kitten
-            </button>
-            <button className="key" onClick={this.handleGoldKeyClick}>
-              GoldKey
-            </button>
-            <button className="hshoe" onClick={this.handleHorseShoeClick}>
-              HorseShoe
-            </button>
-            <button className="dove" onClick={this.handleDoveClick}>
-              Dove
-            </button>
             <div className="words">
               {this.state.hammer ? "" : <p>Hammer</p>}
               {this.state.handCuff ? "" : <p>Hand Cuff</p>}

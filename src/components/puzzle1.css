@@ -2,6 +2,9 @@
   display: grid;
   grid-column: 1 / span 10;
   grid-row: 1 / span 10;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
 }
 .puz1 {
   display: grid;
@@ -15,8 +18,98 @@
   grid-row: 1;
   height: 30px;
   width: 80px;
-  margin-left: 45px;
-  margin-top: 20px;
+  margin-left: 55px;
+  margin-top: 25px;
   border-radius: 20px;
   opacity: 0;
+}
+
+.cuff {
+  grid-column: 6;
+  grid-row: 4 / span 2;
+  width: 30px;
+  height: 35px;
+  margin-left: 65px;
+  margin-top: 55px;
+  opacity: 0;
+}
+
+.shoe {
+  grid-column: 8 / span 2;
+  grid-row: 1 / span 2;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.spoon {
+  grid-column: 8;
+  grid-row: 9 / span 2;
+  opacity: 0;
+  height: 85px;
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.bullet {
+  grid-column: 3 / span 2;
+  grid-row: 9 / span 2;
+  opacity: 0;
+  height: 40px;
+  width: 50px;
+  margin-top: 35px;
+  margin-left: 70px;
+}
+
+.scissors {
+  grid-column: 10;
+  grid-row: 8 / span 2;
+  opacity: 0;
+  width: 40px;
+  height: 80px;
+  margin-left: 40px;
+  margin-top: 25px;
+}
+
+.kitten {
+  grid-column: 4 / span 2;
+  grid-row: 5;
+  opacity: 0;
+  width: 50px;
+  height: 35px;
+  margin-left: 65px;
+  margin-top: 25px;
+}
+
+.key {
+  grid-column: 10;
+  grid-row: 6 / span 2;
+  opacity: 0;
+  height: 70px;
+  width: 30px;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.hshoe {
+  grid-column: 3;
+  grid-row: 2 / span 2;
+  opacity: 0;
+  height: 50px;
+  width: 50px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.dove {
+  grid-row: 2;
+  grid-column: 10;
+  opacity: 0;
+  width: 30px;
+  height: 35px;
+  margin-left: 62px;
+  margin-top: 30px;
 }
