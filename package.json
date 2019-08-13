@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
-    "react-countdown-now": "^2.1.1",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
