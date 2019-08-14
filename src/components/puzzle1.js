@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import puzzle1 from "../PuzzleImages/puzzle1.jpg";
 import puzzle1go from "../PuzzleImages/puzzle1gameover.jpg";
+import puzzle1win from "../PuzzleImages/puzzle1win.jpg";
 import "./puzzle1.css";
 
 class Puzzle1 extends Component {
@@ -21,7 +22,7 @@ class Puzzle1 extends Component {
   };
 
   componentDidMount() {
-    this.startCountDown();
+    this.timeStartAndStop();
   }
 
   handleHammerClick = () => {
@@ -128,6 +129,17 @@ class Puzzle1 extends Component {
     window.location.reload();
   };
 
+  timeStartAndStop = () => {
+    if (this.props.timer === true) {
+      this.startCountDown();
+    }
+    if (this.state.score === 10) {
+      this.setState({
+        minutes: "-1"
+      });
+    }
+  };
+
   render() {
     const Timer = () => {
       if (
@@ -144,6 +156,13 @@ class Puzzle1 extends Component {
             <img src={puzzle1go} alt="" />
             <button onClick={this.restart}>Restart</button>
           </>
+        );
+      } else if (this.state.score === 10) {
+        return (
+          <div>
+            <h1 style={{ fontSize: 50 }}>STOP!</h1>
+            <img src={puzzle1win} alt="" />
+          </div>
         );
       } else {
         return (
@@ -234,7 +253,6 @@ class Puzzle1 extends Component {
     return (
       <>
         <Timer minutes={this.state.minutes} seconds={this.state.seconds} />
-
         <div className="words">
           {this.state.hammer ? "" : <p>Hammer</p>}
           {this.state.handCuff ? "" : <p>Hand Cuff</p>}
@@ -247,7 +265,6 @@ class Puzzle1 extends Component {
           {this.state.horseShoe ? "" : <p>Horse Shoe</p>}
           {this.state.dove ? "" : <p>Dove</p>}
         </div>
-        {this.state.score === 10 ? <h1>YOU WIN</h1> : ""}
       </>
     );
   }
