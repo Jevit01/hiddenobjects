@@ -1,104 +1,103 @@
 import React, { Component } from "react";
-import puzzle1 from "../PuzzleImages/puzzle1.jpg";
-import puzzle1go from "../PuzzleImages/puzzle1gameover.jpg";
-import puzzle1win from "../PuzzleImages/puzzle1win.jpg";
-import "./css/puzzle1.css";
-import Puzzle2 from "./puzzle2.js";
+import puzzle3 from "../PuzzleImages/puzzle3.jpg";
+import puzzle3go from "../PuzzleImages/puzzle3gameover.jpg";
+import puzzle3win from "../PuzzleImages/puzzle3win.jpg";
+import "./css/puzzle3.css";
 
-class Puzzle1 extends Component {
+class Puzzle3 extends Component {
   state = {
     seconds: "00",
     minutes: "3",
-    hammer: false,
-    handCuff: false,
-    shoe: false,
-    spoon: false,
-    bullet: false,
-    scissors: false,
-    kitten: false,
-    goldKey: false,
-    horseShoe: false,
-    dove: false,
+    fishHook: false,
+    smokeingPipe: false,
+    flute: false,
+    handPrint: false,
+    spider: false,
+    wishBone: false,
+    cane: false,
+    glue: false,
+    cat: false,
+    horn: false,
     score: 0,
-    level2: false
+    level3: false
   };
 
   componentDidMount() {
     this.startCountDown();
   }
 
-  handleLevel2 = () => {
+  handleLevel3 = () => {
     this.setState({
       level2: true
     });
   };
 
-  handleHammerClick = () => {
+  handleFishHookClick = () => {
     this.setState({
-      hammer: true,
+      fishHook: true,
       score: this.state.score + 1
     });
   };
 
-  handleHandCuffClick = () => {
+  handleSmokingPipeClick = () => {
     this.setState({
-      handCuff: true,
+      smokeingPipe: true,
       score: this.state.score + 1
     });
   };
 
-  handleShoeClick = () => {
+  handleFluteClick = () => {
     this.setState({
-      shoe: true,
+      flute: true,
       score: this.state.score + 1
     });
   };
 
-  handleSpoonClick = () => {
+  handleHandPrintClick = () => {
     this.setState({
-      spoon: true,
+      handPrint: true,
       score: this.state.score + 1
     });
   };
 
-  handleBulletClick = () => {
+  handleSpiderClick = () => {
     this.setState({
-      bullet: true,
+      spider: true,
       score: this.state.score + 1
     });
   };
 
-  handleScissorsClick = () => {
+  handleWishBoneClick = () => {
     this.setState({
-      scissors: true,
+      wishBone: true,
       score: this.state.score + 1
     });
   };
 
-  handleKittenClick = () => {
+  handleCaneClick = () => {
     this.setState({
-      kitten: true,
+      cane: true,
       score: this.state.score + 1
     });
   };
 
-  handleGoldKeyClick = () => {
+  handleGlueClick = () => {
     this.setState({
-      goldKey: true,
+      glue: true,
       score: this.state.score + 1
     });
   };
 
-  handleHorseShoeClick = () => {
+  handleCatClick = () => {
     this.setState({
-      horseShoe: true,
+      cat: true,
       score: this.state.score + 1
     });
   };
 
-  handleDoveClick = () => {
+  handleHornClick = () => {
     this.setState({
-      dove: true,
+      horn: true,
       score: this.state.score + 1
     });
   };
@@ -173,88 +172,94 @@ class Puzzle1 extends Component {
             </div>
             <div className="puz1">
               <img className="puzImg1" src={puzzle1} alt="" />
-              {this.state.hammer ? (
+              {this.state.fishHook ? (
                 ""
               ) : (
-                <button className="hammer" onClick={this.handleHammerClick}>
-                  hammer
+                <button className="fishHook" onClick={this.handleFishHookClick}>
+                  fishHook
                 </button>
               )}
-              {this.state.handCuff ? (
+              {this.state.smokeingPipe ? (
                 ""
               ) : (
-                <button className="cuff" onClick={this.handleHandCuffClick}>
-                  HandCuff
+                <button
+                  className="smokingPipe"
+                  onClick={this.handleSmokingPipeClick}
+                >
+                  SmokingPipe
                 </button>
               )}
-              {this.state.shoe ? (
+              {this.state.flute ? (
                 ""
               ) : (
-                <button className="shoe" onClick={this.handleShoeClick}>
-                  Shoe
+                <button className="flute" onClick={this.handleFluteClick}>
+                  Flute
                 </button>
               )}
-              {this.state.spoon ? (
+              {this.state.handPrint ? (
                 ""
               ) : (
-                <button className="spoon" onClick={this.handleSpoonClick}>
-                  Spoon
+                <button
+                  className="handPrint"
+                  onClick={this.handleHandPrintClick}
+                >
+                  HandPrint
                 </button>
               )}
-              {this.state.bullet ? (
+              {this.state.spider ? (
                 ""
               ) : (
-                <button className="bullet" onClick={this.handleBulletClick}>
-                  Bullet
+                <button className="spider" onClick={this.handleSpiderClick}>
+                  Spider
                 </button>
               )}
-              {this.state.scissors ? (
+              {this.state.wishBone ? (
                 ""
               ) : (
-                <button className="scissors" onClick={this.handleScissorsClick}>
-                  Scissors
+                <button className="wishBone" onClick={this.handleWishBoneClick}>
+                  WishBone
                 </button>
               )}
-              {this.state.kitten ? (
+              {this.state.cane ? (
                 ""
               ) : (
-                <button className="kitten" onClick={this.handleKittenClick}>
-                  Kitten
+                <button className="cane" onClick={this.handleCaneClick}>
+                  Cane
                 </button>
               )}
-              {this.state.goldKey ? (
+              {this.state.glue ? (
                 ""
               ) : (
-                <button className="key" onClick={this.handleGoldKeyClick}>
-                  GoldKey
+                <button className="glue" onClick={this.handleGlueClick}>
+                  Glue
                 </button>
               )}
-              {this.state.horseShoe ? (
+              {this.state.cat ? (
                 ""
               ) : (
-                <button className="hshoe" onClick={this.handleHorseShoeClick}>
-                  HorseShoe
+                <button className="cat" onClick={this.handleCatClick}>
+                  Cat
                 </button>
               )}
-              {this.state.dove ? (
+              {this.state.horn ? (
                 ""
               ) : (
-                <button className="dove" onClick={this.handleDoveClick}>
-                  Dove
+                <button className="horn" onClick={this.handleHornClick}>
+                  Horn
                 </button>
               )}
             </div>
             <div className="words">
-              {this.state.hammer ? "" : <p>Hammer</p>}
-              {this.state.handCuff ? "" : <p>Hand Cuff</p>}
-              {this.state.shoe ? "" : <p>Shoe</p>}
-              {this.state.spoon ? "" : <p>Spoon</p>}
-              {this.state.bullet ? "" : <p>Bullet</p>}
-              {this.state.scissors ? "" : <p>Scissors</p>}
-              {this.state.kitten ? "" : <p>Kitten</p>}
-              {this.state.goldKey ? "" : <p>Gold Key</p>}
-              {this.state.horseShoe ? "" : <p>Horse Shoe</p>}
-              {this.state.dove ? "" : <p>Dove</p>}
+              {this.state.fishHook ? "" : <p>Fish Hook</p>}
+              {this.state.smokeingPipe ? "" : <p>Smoking Pipe</p>}
+              {this.state.flute ? "" : <p>Flute</p>}
+              {this.state.handPrint ? "" : <p>HandPrint</p>}
+              {this.state.spider ? "" : <p>Spider</p>}
+              {this.state.wishBone ? "" : <p>WishBone</p>}
+              {this.state.cane ? "" : <p>Cane</p>}
+              {this.state.glue ? "" : <p>Glue</p>}
+              {this.state.cat ? "" : <p>Cat</p>}
+              {this.state.horn ? "" : <p>Horn</p>}
             </div>
           </>
         );
@@ -263,14 +268,10 @@ class Puzzle1 extends Component {
 
     return (
       <>
-        {this.state.level2 ? (
-          <Puzzle2 />
-        ) : (
-          <Timer minutes={this.state.minutes} seconds={this.state.seconds} />
-        )}
+        <Timer minutes={this.state.minutes} seconds={this.state.seconds} />
       </>
     );
   }
 }
 
-export default Puzzle1;
+export default Puzzle3;

@@ -4,13 +4,11 @@ import Puzzle1 from "./components/puzzle1.js";
 
 class App extends Component {
   state = {
-    start: false,
-    timer1: false
+    start: false
   };
   handleStart = () => {
     this.setState({
-      start: true,
-      timer1: true
+      start: true
     });
   };
 
@@ -18,7 +16,7 @@ class App extends Component {
     return (
       <div className="App">
         {this.state.start ? (
-          <Puzzle1 timer={this.state.timer1} />
+          <Puzzle1 />
         ) : (
           <>
             <h1>Hidden Objects</h1>
