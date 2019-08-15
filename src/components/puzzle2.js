@@ -3,6 +3,7 @@ import puzzle2 from "../PuzzleImages/puzzle2.jpg";
 import puzzle2go from "../PuzzleImages/puzzle2gameover.jpg";
 import puzzle2win from "../PuzzleImages/puzzle2win.jpg";
 import "./css/puzzle2.css";
+import Puzzle3 from "./puzzle3.js";
 
 class Puzzle2 extends Component {
   state = {
@@ -18,12 +19,19 @@ class Puzzle2 extends Component {
     snake: false,
     vase: false,
     revolver: false,
-    score: 0
+    score: 0,
+    level3: false
   };
 
   componentDidMount() {
     this.startCountDown();
   }
+
+  handleLevel3 = () => {
+    this.setState({
+      level3: true
+    });
+  };
 
   handleCheetahClick = () => {
     this.setState({
@@ -152,6 +160,7 @@ class Puzzle2 extends Component {
           <div>
             <h1 style={{ fontSize: 50 }}>STOP!</h1>
             <img src={puzzle2win} alt="" />
+            <button onClick={this.handleLevel3}>Next</button>
           </div>
         );
       } else {
@@ -260,7 +269,11 @@ class Puzzle2 extends Component {
 
     return (
       <>
-        <Timer minutes={this.state.minutes} seconds={this.state.seconds} />
+        {this.state.level3 ? (
+          <Puzzle3 />
+        ) : (
+          <Timer minutes={this.state.minutes} seconds={this.state.seconds} />
+        )}
       </>
     );
   }

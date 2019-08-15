@@ -7,7 +7,7 @@ import "./css/puzzle3.css";
 class Puzzle3 extends Component {
   state = {
     seconds: "00",
-    minutes: "3",
+    minutes: "1",
     fishHook: false,
     smokeingPipe: false,
     flute: false,
@@ -18,19 +18,12 @@ class Puzzle3 extends Component {
     glue: false,
     cat: false,
     horn: false,
-    score: 0,
-    level3: false
+    score: 0
   };
 
   componentDidMount() {
     this.startCountDown();
   }
-
-  handleLevel3 = () => {
-    this.setState({
-      level2: true
-    });
-  };
 
   handleFishHookClick = () => {
     this.setState({
@@ -150,7 +143,7 @@ class Puzzle3 extends Component {
                 {this.state.minutes}:{this.state.seconds}
               </h1>
             </div>
-            <img src={puzzle1go} alt="" />
+            <img src={puzzle3go} alt="" />
             <button onClick={this.restart}>Restart</button>
           </>
         );
@@ -158,8 +151,7 @@ class Puzzle3 extends Component {
         return (
           <div>
             <h1 style={{ fontSize: 50 }}>STOP!</h1>
-            <img src={puzzle1win} alt="" />
-            <button onClick={this.handleLevel2}>Next</button>
+            <img src={puzzle3win} alt="" />
           </div>
         );
       } else {
@@ -170,8 +162,8 @@ class Puzzle3 extends Component {
                 {this.state.minutes}:{this.state.seconds}
               </h1>
             </div>
-            <div className="puz1">
-              <img className="puzImg1" src={puzzle1} alt="" />
+            <div className="puz3">
+              <img className="puzImg3" src={puzzle3} alt="" />
               {this.state.fishHook ? (
                 ""
               ) : (
