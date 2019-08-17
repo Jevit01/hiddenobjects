@@ -20,7 +20,6 @@
   width: 50px;
   margin-left: 80px;
   margin-top: 40px;
-  border-radius: 20px;
   opacity: 0;
 }
 
@@ -31,7 +30,6 @@
   width: 80px;
   margin-left: 30px;
   margin-top: 35px;
-  border-radius: 20px;
   opacity: 0;
 }
 
@@ -42,7 +40,6 @@
   width: 65px;
   margin-left: 60px;
   margin-top: 30px;
-  border-radius: 20px;
   opacity: 0;
 }
 
@@ -53,7 +50,6 @@
   width: 45px;
   margin-left: 40px;
   margin-top: 50px;
-  border-radius: 20px;
   opacity: 0;
 }
 
@@ -64,7 +60,6 @@
   width: 75px;
   margin-left: 37px;
   margin-top: 35px;
-  border-radius: 20px;
   opacity: 0;
 }
 
@@ -75,7 +70,6 @@
   width: 95px;
   margin-left: 15px;
   margin-top: 40px;
-  border-radius: 20px;
   opacity: 0;
 }
 
@@ -86,7 +80,6 @@
   width: 60px;
   margin-left: 15px;
   margin-top: 8px;
-  border-radius: 20px;
   opacity: 0;
 }
 
@@ -97,7 +90,6 @@
   width: 120px;
   margin-left: 70px;
   margin-top: 5px;
-  border-radius: 20px;
   opacity: 0;
 }
 
@@ -108,7 +100,6 @@
   width: 100px;
   margin-left: 50px;
   margin-top: 10px;
-  border-radius: 20px;
   opacity: 0;
 }
 
@@ -119,6 +110,12 @@
   width: 50px;
   margin-left: 70px;
   margin-top: 35px;
-  border-radius: 20px;
   opacity: 0;
+}
+
+.words {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-style: solid;
 }

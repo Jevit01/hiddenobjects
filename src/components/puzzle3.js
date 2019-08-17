@@ -152,6 +152,8 @@ class Puzzle3 extends Component {
           <div>
             <h1 style={{ fontSize: 50 }}>STOP!</h1>
             <img src={puzzle3win} alt="" />
+            <p>CONGRATULATIONS YOU BEAT HIDDEN OBJECTS!</p>
+            <p>More levels coming soon....</p>
           </div>
         );
       } else {
@@ -241,6 +243,7 @@ class Puzzle3 extends Component {
                 </button>
               )}
             </div>
+            <h2>Word Bank</h2>
             <div className="words">
               {this.state.fishHook ? "" : <p>Fish Hook</p>}
               {this.state.smokeingPipe ? "" : <p>Smoking Pipe</p>}

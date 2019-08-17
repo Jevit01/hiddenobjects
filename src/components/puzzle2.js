@@ -250,6 +250,7 @@ class Puzzle2 extends Component {
                 </button>
               )}
             </div>
+            <h2>Word Bank</h2>
             <div className="words">
               {this.state.cheetah ? "" : <p>Cheetah</p>}
               {this.state.scorpion ? "" : <p>Scorpion</p>}

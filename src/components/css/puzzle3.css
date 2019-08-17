@@ -13,13 +13,108 @@
   justify-content: center;
 }
 
-.cheetah {
-  grid-column: 1 / span 2;
-  grid-row: 5 / span 2;
+.fishHook {
+  grid-column: 1;
+  grid-row: 2 / span 2;
   height: 80px;
   width: 50px;
-  margin-left: 80px;
-  margin-top: 40px;
-  border-radius: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
   opacity: 0;
+}
+
+.smokingPipe {
+  grid-column: 1;
+  grid-row: 6;
+  height: 50px;
+  width: 70px;
+  margin-left: 20px;
+  margin-top: 5px;
+  opacity: 0;
+}
+
+.flute {
+  grid-column: 4;
+  grid-row: 6 / span 4;
+  height: 200px;
+  width: 50px;
+  margin-left: 20px;
+  margin-top: 5px;
+  opacity: 0;
+}
+
+.handPrint {
+  grid-column: 5 / span 2;
+  grid-row: 9 / span 2;
+  height: 80px;
+  width: 80px;
+  margin-left: 70px;
+  margin-top: 40px;
+  opacity: 0;
+}
+
+.spider {
+  grid-column: 10;
+  grid-row: 5 / span 2;
+  height: 70px;
+  width: 50px;
+  margin-left: 30px;
+  margin-top: 10px;
+  opacity: 0;
+}
+
+.wishBone {
+  grid-column: 9;
+  grid-row: 3 / span 2;
+  height: 70px;
+  width: 60px;
+  margin-left: 20px;
+  margin-top: 5px;
+  opacity: 0;
+}
+
+.cane {
+  grid-column: 7 / span 2;
+  grid-row: 5 / span 4;
+  height: 200px;
+  width: 60px;
+  margin-left: 50px;
+  margin-top: 35px;
+  opacity: 0;
+}
+
+.glue {
+  grid-column: 5 / span 2;
+  grid-row: 6 / span 2;
+  height: 60px;
+  width: 40px;
+  margin-left: 80px;
+  margin-top: 15px;
+  opacity: 0;
+}
+
+.cat {
+  grid-column: 8 / span 2;
+  grid-row: 7 / span 2;
+  height: 100px;
+  width: 80px;
+  margin-left: 70px;
+  margin-top: 30px;
+  opacity: 0;
+}
+
+.horn {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 2;
+  height: 100px;
+  width: 80px;
+  margin-left: 65px;
+  opacity: 0;
+}
+
+.words {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-style: solid;
 }
