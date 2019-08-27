@@ -152,7 +152,11 @@ class Puzzle1 extends Component {
               </h1>
             </div>
             <img src={puzzle1go} alt="" />
-            <button onClick={this.restart}>Restart</button>
+            <div>
+              <button className="restart" onClick={this.restart}>
+                Restart
+              </button>
+            </div>
           </>
         );
       } else if (this.state.score === 10) {
@@ -160,7 +164,11 @@ class Puzzle1 extends Component {
           <div>
             <h1 style={{ fontSize: 50 }}>STOP!</h1>
             <img src={puzzle1win} alt="" />
-            <button onClick={this.handleLevel2}>Next</button>
+            <div>
+              <button className="next" onClick={this.handleLevel2}>
+                Next
+              </button>
+            </div>
           </div>
         );
       } else {

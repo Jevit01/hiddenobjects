@@ -144,7 +144,11 @@ class Puzzle3 extends Component {
               </h1>
             </div>
             <img src={puzzle3go} alt="" />
-            <button onClick={this.restart}>Restart</button>
+            <div>
+              <button className="restart" onClick={this.restart}>
+                Restart
+              </button>
+            </div>
           </>
         );
       } else if (this.state.score === 10) {

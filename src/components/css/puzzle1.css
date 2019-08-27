@@ -6,6 +6,25 @@
   width: 100%;
   max-height: 100%;
 }
+
+.restart {
+  height: 5.555555555555555vw;
+  width: 13.88888888888889vw;
+  color: white;
+  font-size: 3.4722222222222223vw;
+  background-color: green;
+  border-radius: 1.0416666666666667vw;
+}
+
+.next {
+  height: 5.555555555555555vw;
+  width: 13.88888888888889vw;
+  color: white;
+  font-size: 3.4722222222222223vw;
+  background-color: green;
+  border-radius: 1.0416666666666667vw;
+}
+
 .puz1 {
   display: grid;
   grid-template-columns: repeat(10, 6.3%);
@@ -16,10 +35,10 @@
 .hammer {
   grid-column: 3 / span 2;
   grid-row: 1;
-  height: 40px;
-  width: 80px;
-  margin-left: 55px;
-  margin-top: 15px;
+  height: 2.7777777777777777vw;
+  width: 5.555555555555555vw;
+  margin-left: 3.8194444444444446vw;
+  margin-top: 1.0416666666666667vw;
   opacity: 0;
 }
 
