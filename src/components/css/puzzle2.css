@@ -8,21 +8,21 @@
 }
 
 .restart {
-  height: 80px;
-  width: 200px;
+  height: 5.555555555555555vw;
+  width: 13.88888888888889vw;
   color: white;
-  font-size: 50px;
+  font-size: 3.4722222222222223vw;
   background-color: green;
-  border-radius: 15px;
+  border-radius: 1.0416666666666667vw;
 }
 
 .next {
-  height: 80px;
-  width: 200px;
+  height: 5.555555555555555vw;
+  width: 13.88888888888889vw;
   color: white;
-  font-size: 50px;
+  font-size: 3.4722222222222223vw;
   background-color: green;
-  border-radius: 15px;
+  border-radius: 1.0416666666666667vw;
 }
 
 .puz2 {
@@ -35,100 +35,100 @@
 .cheetah {
   grid-column: 1 / span 2;
   grid-row: 5 / span 2;
-  height: 80px;
-  width: 50px;
-  margin-left: 80px;
-  margin-top: 40px;
+  height: 5.555555555555555vw;
+  width: 3.4722222222222223vw;
+  margin-left: 5.555555555555555vw;
+  margin-top: 2.7777777777777777vw;
   opacity: 0;
 }
 
 .scorpion {
   grid-column: 3 / span 2;
   grid-row: 7 / span 2;
-  height: 60px;
-  width: 80px;
-  margin-left: 30px;
-  margin-top: 35px;
+  height: 4.166666666666667vw;
+  width: 5.555555555555555vw;
+  margin-left: 2.0833333333333335vw;
+  margin-top: 2.4305555555555554vw;
   opacity: 0;
 }
 
 .dragonfly {
   grid-column: 4 / span 2;
   grid-row: 3 / span 2;
-  height: 80px;
-  width: 65px;
-  margin-left: 60px;
-  margin-top: 30px;
+  height: 5.555555555555555vw;
+  width: 4.513888888888889vw;
+  margin-left: 4.166666666666667vw;
+  margin-top: 2.0833333333333335vw;
   opacity: 0;
 }
 
 .footPrint {
   grid-column: 7 / span 2;
   grid-row: 6 / span 2;
-  height: 80px;
-  width: 45px;
-  margin-left: 40px;
-  margin-top: 50px;
+  height: 5.555555555555555vw;
+  width: 3.125vw;
+  margin-left: 2.7777777777777777vw;
+  margin-top: 3.4722222222222223vw;
   opacity: 0;
 }
 
 .moth {
   grid-column: 8 / span 2;
   grid-row: 7 / span 2;
-  height: 60px;
-  width: 75px;
-  margin-left: 37px;
-  margin-top: 35px;
+  height: 4.166666666666667vw;
+  width: 5.208333333333333vw;
+  margin-left: 2.5694444444444446vw;
+  margin-top: 2.4305555555555554vw;
   opacity: 0;
 }
 
 .tent {
   grid-column: 3 / span 2;
   grid-row: 5 / span 2;
-  height: 90px;
-  width: 95px;
-  margin-left: 15px;
-  margin-top: 40px;
+  height: 6.25vw;
+  width: 6.597222222222222vw;
+  margin-left: 1.0416666666666667vw;
+  margin-top: 2.7777777777777777vw;
   opacity: 0;
 }
 
 .beetle {
   grid-column: 10;
   grid-row: 10;
-  height: 30px;
-  width: 60px;
-  margin-left: 15px;
-  margin-top: 8px;
+  height: 2.0833333333333335vw;
+  width: 4.166666666666667vw;
+  margin-left: 1.0416666666666667vw;
+  margin-top: 0.5555555555555556vw;
   opacity: 0;
 }
 
 .snake {
   grid-column: 5 / span 2;
   grid-row: 1 / span 4;
-  height: 190px;
-  width: 120px;
-  margin-left: 70px;
-  margin-top: 5px;
+  height: 13.194444444444445vw;
+  width: 8.333333333333334vw;
+  margin-left: 4.861111111111111vw;
+  margin-top: 0.3472222222222222vw;
   opacity: 0;
 }
 
 .revolver {
   grid-column: 6 / span 2;
   grid-row: 9 / span 2;
-  height: 90px;
-  width: 100px;
-  margin-left: 50px;
-  margin-top: 10px;
+  height: 6.25vw;
+  width: 6.944444444444445vw;
+  margin-left: 3.4722222222222223vw;
+  margin-top: 0.6944444444444444vw;
   opacity: 0;
 }
 
 .vase {
   grid-column: 9 / span 2;
   grid-row: 4 / span 2;
-  height: 80px;
-  width: 50px;
-  margin-left: 70px;
-  margin-top: 35px;
+  height: 5.555555555555555vw;
+  width: 3.4722222222222223vw;
+  margin-left: 4.861111111111111vw;
+  margin-top: 2.4305555555555554vw;
   opacity: 0;
 }
 
