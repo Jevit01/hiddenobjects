@@ -151,7 +151,11 @@ class Puzzle2 extends Component {
                 {this.state.minutes}:{this.state.seconds}
               </h1>
             </div>
-            <img src={puzzle2go} alt="" />
+            <div className="puz2">
+              <div className="puzImg2">
+                <img src={puzzle2go} alt="" />
+              </div>
+            </div>
             <div>
               <button className="restart" onClick={this.restart}>
                 Restart
@@ -163,7 +167,11 @@ class Puzzle2 extends Component {
         return (
           <div>
             <h1 style={{ fontSize: 50 }}>STOP!</h1>
-            <img src={puzzle2win} alt="" />
+            <div className="puz2">
+              <div className="puzImg2">
+                <img src={puzzle2win} alt="" />
+              </div>
+            </div>
             <div>
               <button className="next" onClick={this.handleLevel3}>
                 Next

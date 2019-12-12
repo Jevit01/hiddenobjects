@@ -146,13 +146,16 @@ class Puzzle1 extends Component {
       ) {
         return (
           <>
-            <div>
-              <h1 style={{ fontSize: 50 }}>
-                {this.state.minutes}:{this.state.seconds}
-              </h1>
+            <h1 style={{ fontSize: 50 }}>
+              {this.state.minutes}:{this.state.seconds}
+            </h1>
+
+            <div className="puz1Div">
+              <div className="puz1">
+                <img className="puzzle1go" src={puzzle1go} alt="" />
+              </div>
             </div>
-            <img src={puzzle1go} alt="" />
-            <div>
+            <div className="restartDiv">
               <button className="restart" onClick={this.restart}>
                 Restart
               </button>
@@ -161,109 +164,120 @@ class Puzzle1 extends Component {
         );
       } else if (this.state.score === 10) {
         return (
-          <div>
+          <>
             <h1 style={{ fontSize: 50 }}>STOP!</h1>
-            <img src={puzzle1win} alt="" />
-            <div>
+
+            <div className="puz1Div">
+              <div className="puz1">
+                <img className="puzzle1win" src={puzzle1win} alt="" />
+              </div>
+            </div>
+            <div className="nextDiv">
               <button className="next" onClick={this.handleLevel2}>
                 Next
               </button>
             </div>
-          </div>
+          </>
         );
       } else {
         return (
           <>
-            <div>
-              <h1 style={{ fontSize: 50 }}>
-                {this.state.minutes}:{this.state.seconds}
-              </h1>
+            <h1 style={{ fontSize: 50 }}>
+              {this.state.minutes}:{this.state.seconds}
+            </h1>
+
+            <div className="puz1Div">
+              <div className="puz1">
+                <img className="puzImg1" src={puzzle1} alt="" />
+                {this.state.hammer ? (
+                  ""
+                ) : (
+                  <button className="hammer" onClick={this.handleHammerClick}>
+                    hammer
+                  </button>
+                )}
+                {this.state.handCuff ? (
+                  ""
+                ) : (
+                  <button className="cuff" onClick={this.handleHandCuffClick}>
+                    HandCuff
+                  </button>
+                )}
+                {this.state.shoe ? (
+                  ""
+                ) : (
+                  <button className="shoe" onClick={this.handleShoeClick}>
+                    Shoe
+                  </button>
+                )}
+                {this.state.spoon ? (
+                  ""
+                ) : (
+                  <button className="spoon" onClick={this.handleSpoonClick}>
+                    Spoon
+                  </button>
+                )}
+                {this.state.bullet ? (
+                  ""
+                ) : (
+                  <button className="bullet" onClick={this.handleBulletClick}>
+                    Bullet
+                  </button>
+                )}
+                {this.state.scissors ? (
+                  ""
+                ) : (
+                  <button
+                    className="scissors"
+                    onClick={this.handleScissorsClick}
+                  >
+                    Scissors
+                  </button>
+                )}
+                {this.state.kitten ? (
+                  ""
+                ) : (
+                  <button className="kitten" onClick={this.handleKittenClick}>
+                    Kitten
+                  </button>
+                )}
+                {this.state.goldKey ? (
+                  ""
+                ) : (
+                  <button className="key" onClick={this.handleGoldKeyClick}>
+                    GoldKey
+                  </button>
+                )}
+                {this.state.horseShoe ? (
+                  ""
+                ) : (
+                  <button className="hshoe" onClick={this.handleHorseShoeClick}>
+                    HorseShoe
+                  </button>
+                )}
+                {this.state.dove ? (
+                  ""
+                ) : (
+                  <button className="dove" onClick={this.handleDoveClick}>
+                    Dove
+                  </button>
+                )}
+              </div>
             </div>
-            <div className="puz1">
-              <img className="puzImg1" src={puzzle1} alt="" />
-              {this.state.hammer ? (
-                ""
-              ) : (
-                <button className="hammer" onClick={this.handleHammerClick}>
-                  hammer
-                </button>
-              )}
-              {this.state.handCuff ? (
-                ""
-              ) : (
-                <button className="cuff" onClick={this.handleHandCuffClick}>
-                  HandCuff
-                </button>
-              )}
-              {this.state.shoe ? (
-                ""
-              ) : (
-                <button className="shoe" onClick={this.handleShoeClick}>
-                  Shoe
-                </button>
-              )}
-              {this.state.spoon ? (
-                ""
-              ) : (
-                <button className="spoon" onClick={this.handleSpoonClick}>
-                  Spoon
-                </button>
-              )}
-              {this.state.bullet ? (
-                ""
-              ) : (
-                <button className="bullet" onClick={this.handleBulletClick}>
-                  Bullet
-                </button>
-              )}
-              {this.state.scissors ? (
-                ""
-              ) : (
-                <button className="scissors" onClick={this.handleScissorsClick}>
-                  Scissors
-                </button>
-              )}
-              {this.state.kitten ? (
-                ""
-              ) : (
-                <button className="kitten" onClick={this.handleKittenClick}>
-                  Kitten
-                </button>
-              )}
-              {this.state.goldKey ? (
-                ""
-              ) : (
-                <button className="key" onClick={this.handleGoldKeyClick}>
-                  GoldKey
-                </button>
-              )}
-              {this.state.horseShoe ? (
-                ""
-              ) : (
-                <button className="hshoe" onClick={this.handleHorseShoeClick}>
-                  HorseShoe
-                </button>
-              )}
-              {this.state.dove ? (
-                ""
-              ) : (
-                <button className="dove" onClick={this.handleDoveClick}>
-                  Dove
-                </button>
-              )}
-            </div>
-            <h2>Word Bank</h2>
-            <div className="words">
-              {this.state.hammer ? "" : <p>Hammer</p>}
-              {this.state.handCuff ? "" : <p>Hand Cuff</p>}
-              {this.state.shoe ? "" : <p>Shoe</p>}
-              {this.state.spoon ? "" : <p>Spoon</p>}
-              {this.state.bullet ? "" : <p>Bullet</p>}
-              {this.state.scissors ? "" : <p>Scissors</p>}
-              {this.state.kitten ? "" : <p>Kitten</p>}
-              {this.state.goldKey ? "" : <p>Gold Key</p>}
-              {this.state.horseShoe ? "" : <p>Horse Shoe</p>}
-              {this.state.dove ? "" : <p>Dove</p>}
+            <div className="wordbank">
+              <h2>Word Bank</h2>
+              <div className="words">
+                {this.state.hammer ? "" : <p>Hammer</p>}
+                {this.state.handCuff ? "" : <p>Hand Cuff</p>}
+                {this.state.shoe ? "" : <p>Shoe</p>}
+                {this.state.spoon ? "" : <p>Spoon</p>}
+                {this.state.bullet ? "" : <p>Bullet</p>}
+                {this.state.scissors ? "" : <p>Scissors</p>}
+                {this.state.kitten ? "" : <p>Kitten</p>}
+                {this.state.goldKey ? "" : <p>Gold Key</p>}
+                {this.state.horseShoe ? "" : <p>Horse Shoe</p>}
+                {this.state.dove ? "" : <p>Dove</p>}
+              </div>
             </div>
           </>
         );

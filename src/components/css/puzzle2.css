@@ -1,3 +1,7 @@
+h1 {
+  margin-top: 0;
+}
+
 .puzImg2 {
   display: grid;
   grid-column: 1 / span 10;
