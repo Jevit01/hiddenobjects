@@ -2,6 +2,26 @@ h1 {
   margin-top: 0;
 }
 
+.puzzle2win {
+  display: grid;
+  grid-column: 1 / span 10;
+  grid-row: 1 / span 10;
+  width: 100%;
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.puzzle2go {
+  display: grid;
+  grid-column: 1 / span 10;
+  grid-row: 1 / span 10;
+  width: 100%;
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .puzImg2 {
   display: grid;
   grid-column: 1 / span 10;
@@ -34,6 +54,10 @@ h1 {
   grid-template-columns: repeat(10, 6.3%);
   grid-template-rows: repeat(10, 10%);
   justify-content: center;
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .cheetah {

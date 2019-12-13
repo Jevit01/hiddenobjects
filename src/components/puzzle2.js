@@ -152,10 +152,9 @@ class Puzzle2 extends Component {
               </h1>
             </div>
             <div className="puz2">
-              <div className="puzImg2">
-                <img src={puzzle2go} alt="" />
-              </div>
+              <img className="puzzle2go" src={puzzle2go} alt="" />
             </div>
+
             <div>
               <button className="restart" onClick={this.restart}>
                 Restart
@@ -168,9 +167,7 @@ class Puzzle2 extends Component {
           <div>
             <h1 style={{ fontSize: 50 }}>STOP!</h1>
             <div className="puz2">
-              <div className="puzImg2">
-                <img src={puzzle2win} alt="" />
-              </div>
+              <img className="puzzle2win" src={puzzle2win} alt="" />
             </div>
             <div>
               <button className="next" onClick={this.handleLevel3}>

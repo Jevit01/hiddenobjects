@@ -143,7 +143,9 @@ class Puzzle3 extends Component {
                 {this.state.minutes}:{this.state.seconds}
               </h1>
             </div>
-            <img src={puzzle3go} alt="" />
+            <div className="puz3">
+              <img className="puzzle3go" src={puzzle3go} alt="" />
+            </div>
             <div>
               <button className="restart" onClick={this.restart}>
                 Restart
@@ -155,7 +157,9 @@ class Puzzle3 extends Component {
         return (
           <div>
             <h1 style={{ fontSize: 50 }}>STOP!</h1>
-            <img src={puzzle3win} alt="" />
+            <div className="puz3">
+              <img className="puzzle3win" src={puzzle3win} alt="" />
+            </div>
             <p>CONGRATULATIONS YOU BEAT HIDDEN OBJECTS!</p>
             <p>More levels coming soon....</p>
           </div>
