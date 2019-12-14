@@ -1,7 +1,10 @@
 import React, { Component } from "react";
+import Sound from "react-sound";
 import puzzle3 from "../PuzzleImages/puzzle3.jpg";
 import puzzle3go from "../PuzzleImages/puzzle3gameover.jpg";
 import puzzle3win from "../PuzzleImages/puzzle3win.jpg";
+import puz3sound from "../Sounds/Puz3sound.mp3";
+import gameover3sound from "../Sounds/gameover3sound.mp3";
 import "./css/puzzle3.css";
 
 class Puzzle3 extends Component {
@@ -271,6 +274,13 @@ class Puzzle3 extends Component {
 
     return (
       <>
+        {this.state.minutes.toString() === "0" &&
+        this.state.seconds.toString() === "00" &&
+        this.state.score < 10 ? (
+          <Sound url={gameover3sound} playStatus={Sound.status.PLAYING} />
+        ) : (
+          <Sound url={puz3sound} playStatus={Sound.status.PLAYING} />
+        )}
         <Timer minutes={this.state.minutes} seconds={this.state.seconds} />
       </>
     );

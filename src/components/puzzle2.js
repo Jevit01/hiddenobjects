@@ -1,7 +1,10 @@
 import React, { Component } from "react";
+import Sound from "react-sound";
 import puzzle2 from "../PuzzleImages/puzzle2.jpg";
 import puzzle2go from "../PuzzleImages/puzzle2gameover.jpg";
 import puzzle2win from "../PuzzleImages/puzzle2win.jpg";
+import puz2sound from "../Sounds/Puz2sound.mp3";
+import gameover2sound from "../Sounds/gameover2sound.mp3";
 import "./css/puzzle2.css";
 import Puzzle3 from "./puzzle3.js";
 
@@ -286,7 +289,16 @@ class Puzzle2 extends Component {
         {this.state.level3 ? (
           <Puzzle3 />
         ) : (
-          <Timer minutes={this.state.minutes} seconds={this.state.seconds} />
+          <>
+            {this.state.minutes.toString() === "0" &&
+            this.state.seconds.toString() === "00" &&
+            this.state.score < 10 ? (
+              <Sound url={gameover2sound} playStatus={Sound.status.PLAYING} />
+            ) : (
+              <Sound url={puz2sound} playStatus={Sound.status.PLAYING} />
+            )}
+            <Timer minutes={this.state.minutes} seconds={this.state.seconds} />
+          </>
         )}
       </>
     );
