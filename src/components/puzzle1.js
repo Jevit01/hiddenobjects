@@ -4,6 +4,7 @@ import puzzle1 from "../PuzzleImages/puzzle1.jpg";
 import puzzle1go from "../PuzzleImages/puzzle1gameover.jpg";
 import puzzle1win from "../PuzzleImages/puzzle1win.jpg";
 import puz1sound from "../Sounds/Puz1sound.mp3";
+import gameover1sound from "../Sounds/gameover1sound.mp3";
 import "./css/puzzle1.css";
 import Puzzle2 from "./puzzle2.js";
 
@@ -292,7 +293,13 @@ class Puzzle1 extends Component {
           <Puzzle2 />
         ) : (
           <>
-            <Sound url={puz1sound} playStatus={Sound.status.PLAYING} />
+            {this.state.minutes.toString() === "0" &&
+            this.state.seconds.toString() === "00" &&
+            this.state.score < 10 ? (
+              <Sound url={gameover1sound} playStatus={Sound.status.PLAYING} />
+            ) : (
+              <Sound url={puz1sound} playStatus={Sound.status.PLAYING} />
+            )}
             <Timer minutes={this.state.minutes} seconds={this.state.seconds} />
           </>
         )}
