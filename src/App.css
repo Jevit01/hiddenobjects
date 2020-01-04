@@ -6,7 +6,7 @@
   align-items: center;
   background-image: url(./PuzzleImages/homepage.jpg);
   background-repeat: no-repeat;
-  background-size: 1440px 850px, cover;
+  background-size: 100vw 59.02777777777778vw, cover;
   position: fixed;
   padding: 0;
   margin: 0;
@@ -26,7 +26,7 @@
 .objective {
   color: white;
   text-align: center;
-  width: 500px;
+  width: 34.72222222222222vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,11 +34,11 @@
 .box {
   background-color: rgba(0, 0, 0, 0.3);
   margin-left: auto;
-  margin-right: 550px;
-  margin-top: 142px;
-  padding-top: 50px;
+  margin-right: 38.19444444444444vw;
+  margin-top: 9.86111111111111vw;
+  padding-top: 3.4722222222222223vw;
   margin-bottom: auto;
-  width: 560px;
-  height: 300px;
+  width: 38.888888888888886vw;
+  height: 20.833333333333332vw;
   border-radius: 100%;
 }

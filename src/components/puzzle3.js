@@ -140,7 +140,7 @@ class Puzzle3 extends Component {
         this.state.score < 10
       ) {
         return (
-          <>
+          <div className="puzzle3page">
             <div className="time">
               <h1 style={{ fontSize: 50 }}>
                 {this.state.minutes}:{this.state.seconds}
@@ -155,11 +155,11 @@ class Puzzle3 extends Component {
                 Restart
               </button>
             </div>
-          </>
+          </div>
         );
       } else if (this.state.score === 10) {
         return (
-          <>
+          <div className="puzzle3page">
             <div className="time">
               <h1 style={{ fontSize: 50 }}>STOP!</h1>
             </div>
@@ -170,11 +170,11 @@ class Puzzle3 extends Component {
               <p>CONGRATULATIONS YOU BEAT HIDDEN OBJECTS!</p>
               <p>More levels coming soon....</p>
             </div>
-          </>
+          </div>
         );
       } else {
         return (
-          <>
+          <div className="puzzle3page">
             <div className="time">
               <h1 style={{ fontSize: 50 }}>
                 {this.state.minutes}:{this.state.seconds}
@@ -274,13 +274,13 @@ class Puzzle3 extends Component {
                 {this.state.horn ? "" : <p>Horn</p>}
               </div>
             </div>
-          </>
+          </div>
         );
       }
     };
 
     return (
-      <>
+      <div className="puzzle3page">
         {this.state.minutes.toString() === "0" &&
         this.state.seconds.toString() === "00" &&
         this.state.score < 10 ? (
@@ -289,7 +289,7 @@ class Puzzle3 extends Component {
           <Sound url={puz3sound} playStatus={Sound.status.PLAYING} />
         )}
         <Timer minutes={this.state.minutes} seconds={this.state.seconds} />
-      </>
+      </div>
     );
   }
 }

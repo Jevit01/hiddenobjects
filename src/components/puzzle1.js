@@ -149,7 +149,7 @@ class Puzzle1 extends Component {
         this.state.score < 10
       ) {
         return (
-          <>
+          <div className="puzzle1page">
             <div className="time">
               <h1 style={{ fontSize: 50 }}>
                 {this.state.minutes}:{this.state.seconds}
@@ -167,11 +167,11 @@ class Puzzle1 extends Component {
                 Restart
               </button>
             </div>
-          </>
+          </div>
         );
       } else if (this.state.score === 10) {
         return (
-          <>
+          <div className="puzzle1page">
             <div className="time">
               <h1 style={{ fontSize: 50 }}>STOP!</h1>
             </div>
@@ -186,11 +186,11 @@ class Puzzle1 extends Component {
                 Next
               </button>
             </div>
-          </>
+          </div>
         );
       } else {
         return (
-          <>
+          <div className="puzzle1page">
             <div className="time">
               <h1 style={{ fontSize: 50 }}>
                 {this.state.minutes}:{this.state.seconds}
@@ -291,13 +291,13 @@ class Puzzle1 extends Component {
                 {this.state.dove ? "" : <p>Dove</p>}
               </div>
             </div>
-          </>
+          </div>
         );
       }
     };
 
     return (
-      <>
+      <div className="puzzle1page">
         {this.state.level2 ? (
           <Puzzle2 />
         ) : (
@@ -324,7 +324,7 @@ class Puzzle1 extends Component {
             <Timer minutes={this.state.minutes} seconds={this.state.seconds} />
           </>
         )}
-      </>
+      </div>
     );
   }
 }
