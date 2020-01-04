@@ -2,6 +2,14 @@ h1 {
   margin-top: 0;
 }
 
+.time {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-left: 41.666666666666664vw;
+  margin-right: 41.666666666666664vw;
+  border-radius: 1.0416666666666667vw;
+}
+
 .puzzle3win {
   display: grid;
   grid-column: 1 / span 10;
@@ -165,4 +173,19 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   border-style: solid;
+}
+
+.wordbank {
+  grid-column: 2;
+  grid-row: 3;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.congrats {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-left: 34.72222222222222vw;
+  margin-right: 34.72222222222222vw;
+  border-radius: 1.0416666666666667vw;
 }

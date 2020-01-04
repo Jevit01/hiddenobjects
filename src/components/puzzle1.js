@@ -150,15 +150,18 @@ class Puzzle1 extends Component {
       ) {
         return (
           <>
-            <h1 style={{ fontSize: 50 }}>
-              {this.state.minutes}:{this.state.seconds}
-            </h1>
+            <div className="time">
+              <h1 style={{ fontSize: 50 }}>
+                {this.state.minutes}:{this.state.seconds}
+              </h1>
+            </div>
 
             <div className="puz1Div">
               <div className="puz1">
                 <img className="puzzle1go" src={puzzle1go} alt="" />
               </div>
             </div>
+            <br />
             <div className="restartDiv">
               <button className="restart" onClick={this.restart}>
                 Restart
@@ -169,13 +172,15 @@ class Puzzle1 extends Component {
       } else if (this.state.score === 10) {
         return (
           <>
-            <h1 style={{ fontSize: 50 }}>STOP!</h1>
-
+            <div className="time">
+              <h1 style={{ fontSize: 50 }}>STOP!</h1>
+            </div>
             <div className="puz1Div">
               <div className="puz1">
                 <img className="puzzle1win" src={puzzle1win} alt="" />
               </div>
             </div>
+            <br />
             <div className="nextDiv">
               <button className="next" onClick={this.handleLevel2}>
                 Next
@@ -186,9 +191,11 @@ class Puzzle1 extends Component {
       } else {
         return (
           <>
-            <h1 style={{ fontSize: 50 }}>
-              {this.state.minutes}:{this.state.seconds}
-            </h1>
+            <div className="time">
+              <h1 style={{ fontSize: 50 }}>
+                {this.state.minutes}:{this.state.seconds}
+              </h1>
+            </div>
 
             <div className="puz1Div">
               <div className="puz1">
@@ -268,8 +275,9 @@ class Puzzle1 extends Component {
                 )}
               </div>
             </div>
+
+            <h2 className="time">Word Bank</h2>
             <div className="wordbank">
-              <h2>Word Bank</h2>
               <div className="words">
                 {this.state.hammer ? "" : <p>Hammer</p>}
                 {this.state.handCuff ? "" : <p>Hand Cuff</p>}

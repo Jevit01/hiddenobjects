@@ -141,7 +141,7 @@ class Puzzle3 extends Component {
       ) {
         return (
           <>
-            <div>
+            <div className="time">
               <h1 style={{ fontSize: 50 }}>
                 {this.state.minutes}:{this.state.seconds}
               </h1>
@@ -149,6 +149,7 @@ class Puzzle3 extends Component {
             <div className="puz3">
               <img className="puzzle3go" src={puzzle3go} alt="" />
             </div>
+            <br />
             <div>
               <button className="restart" onClick={this.restart}>
                 Restart
@@ -158,19 +159,23 @@ class Puzzle3 extends Component {
         );
       } else if (this.state.score === 10) {
         return (
-          <div>
-            <h1 style={{ fontSize: 50 }}>STOP!</h1>
+          <>
+            <div className="time">
+              <h1 style={{ fontSize: 50 }}>STOP!</h1>
+            </div>
             <div className="puz3">
               <img className="puzzle3win" src={puzzle3win} alt="" />
             </div>
-            <p>CONGRATULATIONS YOU BEAT HIDDEN OBJECTS!</p>
-            <p>More levels coming soon....</p>
-          </div>
+            <div className="congrats">
+              <p>CONGRATULATIONS YOU BEAT HIDDEN OBJECTS!</p>
+              <p>More levels coming soon....</p>
+            </div>
+          </>
         );
       } else {
         return (
           <>
-            <div>
+            <div className="time">
               <h1 style={{ fontSize: 50 }}>
                 {this.state.minutes}:{this.state.seconds}
               </h1>
@@ -254,18 +259,20 @@ class Puzzle3 extends Component {
                 </button>
               )}
             </div>
-            <h2>Word Bank</h2>
-            <div className="words">
-              {this.state.fishHook ? "" : <p>Fish Hook</p>}
-              {this.state.smokeingPipe ? "" : <p>Smoking Pipe</p>}
-              {this.state.flute ? "" : <p>Flute</p>}
-              {this.state.handPrint ? "" : <p>HandPrint</p>}
-              {this.state.spider ? "" : <p>Spider</p>}
-              {this.state.wishBone ? "" : <p>WishBone</p>}
-              {this.state.cane ? "" : <p>Cane</p>}
-              {this.state.glue ? "" : <p>Glue</p>}
-              {this.state.cat ? "" : <p>Cat</p>}
-              {this.state.horn ? "" : <p>Horn</p>}
+            <h2 className="time">Word Bank</h2>
+            <div className="wordbank">
+              <div className="words">
+                {this.state.fishHook ? "" : <p>Fish Hook</p>}
+                {this.state.smokeingPipe ? "" : <p>Smoking Pipe</p>}
+                {this.state.flute ? "" : <p>Flute</p>}
+                {this.state.handPrint ? "" : <p>HandPrint</p>}
+                {this.state.spider ? "" : <p>Spider</p>}
+                {this.state.wishBone ? "" : <p>WishBone</p>}
+                {this.state.cane ? "" : <p>Cane</p>}
+                {this.state.glue ? "" : <p>Glue</p>}
+                {this.state.cat ? "" : <p>Cat</p>}
+                {this.state.horn ? "" : <p>Horn</p>}
+              </div>
             </div>
           </>
         );

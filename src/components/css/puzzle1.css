@@ -2,6 +2,14 @@ h1 {
   margin-top: 0;
 }
 
+.time {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-left: 41.666666666666664vw;
+  margin-right: 41.666666666666664vw;
+  border-radius: 1.0416666666666667vw;
+}
+
 .puzzle1win {
   display: grid;
   grid-column: 1 / span 10;
@@ -178,4 +186,6 @@ h1 {
 .wordbank {
   grid-column: 2;
   grid-row: 3;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
 }
