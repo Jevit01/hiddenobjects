@@ -1,3 +1,44 @@
 .App {
   text-align: center;
 }
+.homepage {
+  background-color: #5cc9dd;
+  align-items: center;
+  background-image: url(./PuzzleImages/homepage.jpg);
+  background-repeat: no-repeat;
+  background-size: 1440px 850px, cover;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.objective {
+  color: white;
+  text-align: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  padding-top: 50px;
+  margin-bottom: auto;
+  width: 560px;
+  height: 300px;
+  border-radius: 100%;
+}
