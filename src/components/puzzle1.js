@@ -151,7 +151,7 @@ class Puzzle1 extends Component {
         return (
           <div className="puzzle1page">
             <div className="time">
-              <h1 style={{ fontSize: 50 }}>
+              <h1>
                 {this.state.minutes}:{this.state.seconds}
               </h1>
             </div>
@@ -173,7 +173,7 @@ class Puzzle1 extends Component {
         return (
           <div className="puzzle1page">
             <div className="time">
-              <h1 style={{ fontSize: 50 }}>STOP!</h1>
+              <h1>STOP!</h1>
             </div>
             <div className="puz1Div">
               <div className="puz1">
@@ -192,7 +192,7 @@ class Puzzle1 extends Component {
         return (
           <div className="puzzle1page">
             <div className="time">
-              <h1 style={{ fontSize: 50 }}>
+              <h1>
                 {this.state.minutes}:{this.state.seconds}
               </h1>
             </div>
