@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hiddenobjects/static/css/main.5118a3d5.chunk.css",
+    "main.css": "/hiddenobjects/static/css/main.b262b80c.chunk.css",
     "main.js": "/hiddenobjects/static/js/main.04c4213f.chunk.js",
     "main.js.map": "/hiddenobjects/static/js/main.04c4213f.chunk.js.map",
     "runtime~main.js": "/hiddenobjects/static/js/runtime~main.1bc87671.js",
@@ -8,9 +8,9 @@
     "static/js/2.3a8eb8dc.chunk.js": "/hiddenobjects/static/js/2.3a8eb8dc.chunk.js",
     "static/js/2.3a8eb8dc.chunk.js.map": "/hiddenobjects/static/js/2.3a8eb8dc.chunk.js.map",
     "index.html": "/hiddenobjects/index.html",
-    "precache-manifest.2e87c5811d2519e4d07ebe042970f904.js": "/hiddenobjects/precache-manifest.2e87c5811d2519e4d07ebe042970f904.js",
+    "precache-manifest.4514e2707dac54de4285b81c9298de9b.js": "/hiddenobjects/precache-manifest.4514e2707dac54de4285b81c9298de9b.js",
     "service-worker.js": "/hiddenobjects/service-worker.js",
-    "static/css/main.5118a3d5.chunk.css.map": "/hiddenobjects/static/css/main.5118a3d5.chunk.css.map",
+    "static/css/main.b262b80c.chunk.css.map": "/hiddenobjects/static/css/main.b262b80c.chunk.css.map",
     "static/media/Puz1sound.mp3": "/hiddenobjects/static/media/Puz1sound.2bef8881.mp3",
     "static/media/Puz2sound.mp3": "/hiddenobjects/static/media/Puz2sound.64e3a2ae.mp3",
     "static/media/Puz3sound.mp3": "/hiddenobjects/static/media/Puz3sound.0976e213.mp3",
