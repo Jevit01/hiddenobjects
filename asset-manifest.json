@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fc755ef9.chunk.css",
+    "main.js": "/static/js/main.01f26483.chunk.js",
+    "main.js.map": "/static/js/main.01f26483.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.3a8eb8dc.chunk.js": "/static/js/2.3a8eb8dc.chunk.js",
+    "static/js/2.3a8eb8dc.chunk.js.map": "/static/js/2.3a8eb8dc.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.86cf8033eb78a65865206c2a26d297be.js": "/precache-manifest.86cf8033eb78a65865206c2a26d297be.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.fc755ef9.chunk.css.map": "/static/css/main.fc755ef9.chunk.css.map",
+    "static/media/Puz1sound.mp3": "/static/media/Puz1sound.2bef8881.mp3",
+    "static/media/Puz2sound.mp3": "/static/media/Puz2sound.64e3a2ae.mp3",
+    "static/media/Puz3sound.mp3": "/static/media/Puz3sound.0976e213.mp3",
+    "static/media/gameover1sound.mp3": "/static/media/gameover1sound.de4ea3c5.mp3",
+    "static/media/gameover2sound.mp3": "/static/media/gameover2sound.10423512.mp3",
+    "static/media/gameover3sound.mp3": "/static/media/gameover3sound.51e6bc58.mp3",
+    "static/media/App.css": "/static/media/homepage.08008613.jpg",
+    "static/media/puzzle1.jpg": "/static/media/puzzle1.d8e26d80.jpg",
+    "static/media/puzzle1gameover.jpg": "/static/media/puzzle1gameover.8a58ac25.jpg",
+    "static/media/puzzle1win.jpg": "/static/media/puzzle1win.c4ecf20b.jpg",
+    "static/media/puzzle2.jpg": "/static/media/puzzle2.83a35ba5.jpg",
+    "static/media/puzzle2gameover.jpg": "/static/media/puzzle2gameover.c3f74da8.jpg",
+    "static/media/puzzle2win.jpg": "/static/media/puzzle2win.4e6ed06a.jpg",
+    "static/media/puzzle3.jpg": "/static/media/puzzle3.a8507d05.jpg",
+    "static/media/puzzle3gameover.jpg": "/static/media/puzzle3gameover.1ec4508c.jpg",
+    "static/media/puzzle3win.jpg": "/static/media/puzzle3win.16ccd93d.jpg",
+    "static/media/win1sound.mp3": "/static/media/win1sound.a7d20bae.mp3"
+  }
+}
